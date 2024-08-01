@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  basePath: "/timezone-meeting-scheduler",
+  images: {
+    unoptimized: true,
+  },
+};
 
-export default nextConfig;
+module.exports = nextConfig;
